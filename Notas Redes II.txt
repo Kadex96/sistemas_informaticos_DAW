@@ -1,0 +1,38 @@
+NOTAS SOBRE REDES (II)
+
+- Todas las direcciones IP tienen un identificador de red y de host
+
+- Máscara de red --> Nos indica de una dirección IP, cual es la parte de RED.
+
+- El número de redes   #redes = 2^n  --> siendo 'n' el número de bits que tiene la parte
+de red.
+
+- #hosts = (2^n) - 2  (Porque hay que quitar el de broadcast y el de red)
+
+- ¿Cómo se calcula el nombre de red? 
+	Todos los bits de host se ponen a 0.
+
+- Para averiguar la dirección de broadcast, todos los bits de hosts los ponemos a 1.
+
+
+MÁSCARAS DE RED
+A --> 255.0.0.0  --> 8 bits a uno
+
+B --> 255.255.0.0 --> 16 bits a uno
+
+C --> 255.255.255.0 --> 24 bits a uno
+
+El nombre de red puede llegar hasta 30 bits a uno como mucho, los dos últimos son
+para el host.
+
+RANGO DE HOST
+
+Se tiene que especificar el primer valor y el último. Empieza desde el valor siguiente
+a la dirección de red y termina justo un número antes de la dirección de broadcast
+(que se utiliza para referirse a todos los ordenadores de la red).
+
+PREFIJOS EQUIVALENTES --> 3 formas de ponerlos
+
+- En binario
+- En decimal
+- con "/n"  siendo 'n' un número entre 8 y 30
